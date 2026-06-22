@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mostab Siratul Zanan · Premium UI/UX designer portfolio focused on conversion-centric heuristics, structured design systems, and measurable business impact.">
+    <title>Mostab Siratul Zanan | UI/UX Designer & Product Architect</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: {
+                            50: '#F8FAFC',
+                            100: '#F1F5F9',
+                            800: '#1E293B',
+                            900: '#0F172A',
+                            950: '#080C14',
+                        },
+                        accent: {
+                            light: '#0D9488', // Teal 600
+                            dark: '#2DD4BF',  // Teal 400
+                            DEFAULT: '#0D9488'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        sora: ['Sora', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 dark:bg-obsidian-950 text-slate-800 dark:text-slate-200 transition-colors duration-300">
+    <div class="noise-bg" aria-hidden="true"></div>
+
+    <!-- Background Orbs -->
+    <div class="fixed top-0 left-0 w-full h-full pointer-events-none overflow-hidden z-0" aria-hidden="true">
+        <div class="absolute -top-[10%] -left-[10%] w-[500px] h-[500px] rounded-full bg-teal-500/10 dark:bg-teal-500/5 blur-[120px] animate-float"></div>
+        <div class="absolute bottom-[20%] -right-[10%] w-[450px] h-[450px] rounded-full bg-indigo-500/10 dark:bg-indigo-500/5 blur-[120px] animate-float-delayed"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 glass-panel bg-white/70 dark:bg-obsidian-950/70 border-b border-slate-200/50 dark:border-slate-800/50 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
+            <a class="flex flex-col group focus:outline-none" href="#home" aria-label="Mostab Siratul Zanan Portfolio Home">
+                <span class="text-[10px] font-bold tracking-[0.3em] uppercase text-accent-light dark:text-accent-dark transition-colors duration-300">Designer</span>
+                <span class="text-lg font-bold tracking-tight text-slate-900 dark:text-white transition-colors duration-300">Mostab Siratul Zanan</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600 dark:text-slate-400" aria-label="Primary">
+                <a href="#work" class="hover:text-slate-900 dark:hover:text-white transition-colors">Work</a>
+                <a href="#about" class="hover:text-slate-900 dark:hover:text-white transition-colors">About</a>
+                <a href="#process" class="hover:text-slate-900 dark:hover:text-white transition-colors">Process</a>
+                <a href="#skills" class="hover:text-slate-900 dark:hover:text-white transition-colors">Skills</a>
+                <a href="#contact" class="hover:text-slate-900 dark:hover:text-white transition-colors">Contact</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <!-- Theme Toggle -->
+                <button id="theme-toggle" class="p-2.5 rounded-full border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-900 text-slate-600 dark:text-slate-400 transition-all focus:outline-none focus:ring-2 focus:ring-accent-light dark:focus:ring-accent-dark" aria-label="Toggle light and dark mode">
+                    <!-- Sun Icon (visible in dark mode) -->
+                    <svg id="theme-toggle-sun" class="hidden w-4 h-4 text-accent-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="5" stroke-width="2" stroke-linecap="round"></circle>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke-width="2" stroke-linecap="round"></path>
+                    </svg>
+                    <!-- Moon Icon (visible in light mode) -->
+                    <svg id="theme-toggle-moon" class="w-4 h-4 text-accent-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+
+                <!-- CTA Navigation Button -->
+                <a class="px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider border border-accent-light/30 dark:border-accent-dark/30 bg-accent-light/5 dark:bg-accent-dark/5 text-slate-900 dark:text-white hover:bg-accent-light/10 dark:hover:bg-accent-dark/10 transition-all focus:outline-none focus:ring-2 focus:ring-accent-light dark:focus:ring-accent-dark" href="#contact">
+                    Book a call
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 pb-24">
+        
+        <!-- Hero Section -->
+        <section id="home" class="py-16 md:py-24 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            
+            <!-- Left Info Panel (Hero Copy) -->
+            <div class="lg:col-span-7 flex flex-col space-y-8">
+                <div class="flex flex-col space-y-4">
+                    <span class="text-xs font-bold tracking-[0.2em] text-accent-light dark:text-accent-dark uppercase">Product Designer · Product Strategy · Design Systems</span>
+                    <div class="flex flex-wrap gap-2" aria-label="Professional status">
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50">Open to product design roles</span>
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50">Remote / Hybrid</span>
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50">Product-led case studies</span>
+                    </div>
+                </div>
+
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.05]">
+                    Designing digital products people <span class="text-accent-light dark:text-accent-dark transition-colors">understand</span>, trust, and keep using.
+                </h1>
+
+                <p class="text-lg text-slate-600 dark:text-slate-400 max-w-xl leading-relaxed">
+                    I help startups and growing teams shape product strategy, lead cross-functional design work, and turn messy ideas into clean experiences with research, clear flows, and polished interfaces.
+                </p>
+
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a class="px-8 py-4 rounded-full text-sm font-bold uppercase tracking-wider text-white dark:text-slate-950 bg-gradient-to-r from-teal-600 to-teal-500 dark:from-teal-400 dark:to-teal-300 hover:shadow-[0_12px_30px_-5px_rgba(45,212,191,0.3)] hover:-translate-y-0.5 transition-all focus:outline-none focus:ring-2 focus:ring-accent-light dark:focus:ring-accent-dark" href="#work">
+                        See my work
+                    </a>
+                    <a class="px-8 py-4 rounded-full text-sm font-bold uppercase tracking-wider border border-slate-200 dark:border-slate-800 bg-white/30 dark:bg-slate-900/30 hover:bg-slate-100 dark:hover:bg-slate-900 hover:-translate-y-0.5 transition-all text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-slate-300 dark:focus:ring-slate-700" href="#about">
+                        View profile
+                    </a>
+                </div>
+
+                <p class="text-xs text-slate-500 dark:text-slate-500 font-medium">
+                    Product designer focused on clarity, business impact, and scalable design systems.
+                </p>
+
+                <!-- Impact Metrics Grid -->
+                <div class="grid grid-cols-3 gap-6 pt-4 border-t border-slate-200/60 dark:border-slate-800/60" aria-label="Key Performance Indicators">
+                    <div class="flex flex-col space-y-1">
+                        <span class="text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">2+</span>
+                        <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">years experience</span>
+                    </div>
+                    <div class="flex flex-col space-y-1">
+                        <span class="text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">32%</span>
+                        <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">avg. conversion lift</span>
+                    </div>
+                    <div class="flex flex-col space-y-1">
+                        <span class="text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">14</span>
+                        <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">systems shipped</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Interactive Profile Card Panel -->
+            <aside class="lg:col-span-5 flex flex-col space-y-4" aria-label="Designer profile summary">
+                <div class="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-obsidian-900/90 shadow-2xl p-6 md:p-8 relative overflow-hidden transition-all duration-300">
+                    <div class="absolute -right-16 -top-16 w-36 h-36 rounded-full bg-teal-500/10 dark:bg-teal-500/5 blur-2xl"></div>
+                    
+                    <div class="flex flex-col space-y-6">
+                        <div class="flex flex-col space-y-3">
+                            <span class="inline-flex self-start px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-accent-light/10 dark:bg-accent-dark/10 text-accent-light dark:text-accent-dark">Selected Project</span>
+                            <h2 class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Northstar Wallet</h2>
+                            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Redesigned the onboarding flow to reduce drop-off, improve trust, and make the first-time experience feel simpler.
+                            </p>
+                        </div>
+
+                        <!-- Mini Project Stats -->
+                        <div class="grid grid-cols-2 gap-4" aria-label="Project outcomes">
+                            <div class="p-4 rounded-2xl border border-slate-200/60 dark:border-slate-800/60 bg-slate-50 dark:bg-slate-950/50">
+                                <span class="text-2xl font-extrabold tracking-tight text-accent-light dark:text-accent-dark">41%</span>
+                                <span class="block text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold tracking-wider mt-1">Faster Completion</span>
+                            </div>
+                            <div class="p-4 rounded-2xl border border-slate-200/60 dark:border-slate-800/60 bg-slate-50 dark:bg-slate-950/50">
+                                <span class="text-2xl font-extrabold tracking-tight text-accent-light dark:text-accent-dark">+22%</span>
+                                <span class="block text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold tracking-wider mt-1">Finished Signups</span>
+                            </div>
+                        </div>
+
+                        <!-- Graphical Mockup Representation -->
+                        <div class="h-32 rounded-2xl border border-slate-200/60 dark:border-slate-800/60 bg-slate-50 dark:bg-slate-950/50 flex flex-col justify-end p-4 relative overflow-hidden" aria-hidden="true">
+                            <div class="absolute inset-0 flex items-center justify-between px-6 opacity-30">
+                                <div class="w-1.5 h-12 bg-slate-300 dark:bg-slate-800 rounded-full"></div>
+                                <div class="w-1.5 h-20 bg-slate-300 dark:bg-slate-800 rounded-full"></div>
+                                <div class="w-1.5 h-24 bg-accent-light dark:bg-accent-dark rounded-full"></div>
+                                <div class="w-1.5 h-16 bg-slate-300 dark:bg-slate-800 rounded-full"></div>
+                                <div class="w-1.5 h-28 bg-accent-light dark:bg-accent-dark rounded-full"></div>
+                            </div>
+                            <div class="flex items-center justify-between z-10">
+                                <span class="text-xs font-semibold text-slate-500">UX Completion Curve</span>
+                                <span class="text-[10px] font-bold text-accent-light dark:text-accent-dark">OPTIMIZED</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-slate-100 dark:border-slate-800/60">
+                            <h3 class="text-sm font-semibold text-slate-900 dark:text-slate-300 mb-2">Available for full-time & freelance projects.</h3>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">I shape screens, flows, and systems that help people get things done without friction.</p>
+                            <div class="flex flex-wrap gap-1.5 mt-3">
+                                <span class="text-[10px] font-bold bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded text-slate-600 dark:text-slate-300">Research</span>
+                                <span class="text-[10px] font-bold bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded text-slate-600 dark:text-slate-300">IA</span>
+                                <span class="text-[10px] font-bold bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded text-slate-600 dark:text-slate-300">UI Systems</span>
+                                <span class="text-[10px] font-bold bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded text-slate-600 dark:text-slate-300">Prototyping</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Availability Badge -->
+                <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 p-4 flex items-center space-x-3 text-xs text-slate-600 dark:text-slate-400 font-medium">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                    </span>
+                    <span>Available now for select contract roles & consulting</span>
+                </div>
+            </aside>
+        </section>
+
+        <!-- Quick Info Strip -->
+        <section class="py-8 grid grid-cols-2 md:grid-cols-4 gap-4 border-y border-slate-200/60 dark:border-slate-800/60" aria-label="Profile snapshot">
+            <div class="flex flex-col space-y-1">
+                <span class="text-[10px] font-bold uppercase tracking-wider text-accent-light dark:text-accent-dark">Role</span>
+                <span class="text-sm font-semibold text-slate-900 dark:text-white">Product Designer</span>
+            </div>
+            <div class="flex flex-col space-y-1">
+                <span class="text-[10px] font-bold uppercase tracking-wider text-accent-light dark:text-accent-dark">Focus</span>
+                <span class="text-sm font-semibold text-slate-900 dark:text-white">Strategy & Systems</span>
+            </div>
+            <div class="flex flex-col space-y-1">
+                <span class="text-[10px] font-bold uppercase tracking-wider text-accent-light dark:text-accent-dark">Location</span>
+                <span class="text-sm font-semibold text-slate-900 dark:text-white">Open to Remote</span>
+            </div>
+            <div class="flex flex-col space-y-1">
+                <span class="text-[10px] font-bold uppercase tracking-wider text-accent-light dark:text-accent-dark">Availability</span>
+                <span class="text-sm font-semibold text-slate-900 dark:text-white">Freelance & Full-time</span>
+            </div>
+        </section>
+
+        <!-- Selected Case Studies Section (The Core) -->
+        <section id="work" class="py-20 flex flex-col space-y-12">
+            <div class="flex flex-col space-y-3 max-w-xl">
+                <span class="text-xs font-bold tracking-[0.2em] text-accent-light dark:text-accent-dark uppercase">Case Studies</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+                    Two product stories showing strategy, craft, and business results.
+                </h2>
+            </div>
+
+            <!-- Case Study Previews (Bento Layout) -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- Micro-Investing Case Study Preview -->
+                <article class="group rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-obsidian-900 shadow-lg hover:shadow-2xl hover:border-teal-500/30 dark:hover:border-teal-500/20 p-8 flex flex-col justify-between space-y-8 transition-all duration-300">
+                    <div class="flex flex-col space-y-6">
+                        <div class="flex justify-between items-center">
+                            <span class="text-[10px] font-bold uppercase tracking-wider bg-teal-50 dark:bg-teal-950/50 text-teal-600 dark:text-teal-400 px-3 py-1 rounded-full border border-teal-200/50 dark:border-teal-800/30">FinTech B2C · Real Project</span>
+                            <span class="text-xs text-slate-400 font-medium">5 weeks</span>
+                        </div>
+                        <div class="flex flex-col space-y-2">
+                            <h3 class="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">Simplifying Micro-Investing for Gen-Z</h3>
+                            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                A micro-investing experience redesigned to lower anxiety, increase trust, and help first-time investors take action with confidence.
+                            </p>
+                        </div>
+
+                        <!-- Mini Metadata Region (Law of Proximity) -->
+                        <div class="grid grid-cols-2 gap-4 text-xs pt-4 border-t border-slate-100 dark:border-slate-800/60" aria-label="Project details">
+                            <div>
+                                <span class="block text-[10px] uppercase font-bold text-slate-400 tracking-wider">Role</span>
+                                <span class="font-medium text-slate-950 dark:text-slate-200">Product Designer</span>
+                            </div>
+                            <div>
+                                <span class="block text-[10px] uppercase font-bold text-slate-400 tracking-wider">Tools</span>
+                                <span class="font-medium text-slate-950 dark:text-slate-200">Figma, FigJam, Maze</span>
+                            </div>
+                        </div>
+
+                        <!-- KPI Callouts -->
+                        <div class="grid grid-cols-3 gap-2" aria-label="Key Outcomes">
+                            <div class="bg-teal-500/5 p-3 rounded-xl border border-teal-500/10 text-center">
+                                <span class="block text-lg font-bold text-teal-600 dark:text-teal-400">+18%</span>
+                                <span class="text-[9px] uppercase font-bold text-slate-500 dark:text-slate-400 tracking-wider">Deposit Lift</span>
+                            </div>
+                            <div class="bg-teal-500/5 p-3 rounded-xl border border-teal-500/10 text-center">
+                                <span class="block text-lg font-bold text-teal-600 dark:text-teal-400">+12%</span>
+                                <span class="text-[9px] uppercase font-bold text-slate-500 dark:text-slate-400 tracking-wider">7d Retention</span>
+                            </div>
+                            <div class="bg-teal-500/5 p-3 rounded-xl border border-teal-500/10 text-center">
+                                <span class="block text-lg font-bold text-teal-600 dark:text-teal-400">-29%</span>
+                                <span class="text-[9px] uppercase font-bold text-slate-500 dark:text-slate-400 tracking-wider">Time to Invest</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fitts's Law CTA Button -->
+                    <button onclick="openModal('fintech')" class="w-full mt-4 py-3.5 rounded-2xl text-xs font-bold uppercase tracking-wider border border-teal-500/30 dark:border-teal-500/20 bg-teal-500/5 text-teal-600 dark:text-teal-400 hover:bg-teal-600 hover:text-white dark:hover:bg-teal-400 dark:hover:text-slate-950 group-hover:scale-[1.01] hover:shadow-[0_10px_25px_-5px_rgba(45,212,191,0.2)] transition-all flex items-center justify-center space-x-2 focus:outline-none focus:ring-2 focus:ring-teal-500">
+                        <span>Read Case Study</span>
+                        <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </button>
+                </article>
+
+                <!-- Logistics Dashboard Case Study Preview -->
+                <article class="group rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-obsidian-900 shadow-lg hover:shadow-2xl hover:border-indigo-500/30 dark:hover:border-indigo-500/20 p-8 flex flex-col justify-between space-y-8 transition-all duration-300">
+                    <div class="flex flex-col space-y-6">
+                        <div class="flex justify-between items-center">
+                            <span class="text-[10px] font-bold uppercase tracking-wider bg-indigo-50 dark:bg-indigo-950/50 text-indigo-600 dark:text-indigo-400 px-3 py-1 rounded-full border border-indigo-200/50 dark:border-indigo-800/30">SaaS B2B · Enterprise Solution</span>
+                            <span class="text-xs text-slate-400 font-medium">6 weeks</span>
+                        </div>
+                        <div class="flex flex-col space-y-2">
+                            <h3 class="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">Optimizing Supply Chain Logistics Analytics</h3>
+                            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                A complex analytics dashboard redesigned to help supply chain teams read data faster, detect exceptions earlier, and act with less friction.
+                            </p>
+                        </div>
+
+                        <!-- Mini Metadata Region (Law of Proximity) -->
+                        <div class="grid grid-cols-2 gap-4 text-xs pt-4 border-t border-slate-100 dark:border-slate-800/60" aria-label="Project details">
+                            <div>
+                                <span class="block text-[10px] uppercase font-bold text-slate-400 tracking-wider">Role</span>
+                                <span class="font-medium text-slate-950 dark:text-slate-200">Product Designer</span>
+                            </div>
+                            <div>
+                                <span class="block text-[10px] uppercase font-bold text-slate-400 tracking-wider">Tools</span>
+                                <span class="font-medium text-slate-950 dark:text-slate-200">Figma, FigJam, Dovetail</span>
+                            </div>
+                        </div>
+
+                        <!-- KPI Callouts -->
+                        <div class="grid grid-cols-3 gap-2" aria-label="Key Outcomes">
+                            <div class="bg-indigo-500/5 p-3 rounded-xl border border-indigo-500/10 text-center">
+                                <span class="block text-lg font-bold text-indigo-600 dark:text-indigo-400">-24%</span>
+                                <span class="text-[9px] uppercase font-bold text-slate-500 dark:text-slate-400 tracking-wider">Task Time</span>
+                            </div>
+                            <div class="bg-indigo-500/5 p-3 rounded-xl border border-indigo-500/10 text-center">
+                                <span class="block text-lg font-bold text-indigo-600 dark:text-indigo-400">+31%</span>
+                                <span class="text-[9px] uppercase font-bold text-slate-500 dark:text-slate-400 tracking-wider">Filter Adopt</span>
+                            </div>
+                            <div class="bg-indigo-500/5 p-3 rounded-xl border border-indigo-500/10 text-center">
+                                <span class="block text-lg font-bold text-indigo-600 dark:text-indigo-400">-18%</span>
+                                <span class="text-[9px] uppercase font-bold text-slate-500 dark:text-slate-400 tracking-wider">Support Tix</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fitts's Law CTA Button -->
+                    <button onclick="openModal('saas')" class="w-full mt-4 py-3.5 rounded-2xl text-xs font-bold uppercase tracking-wider border border-indigo-500/30 dark:border-indigo-500/20 bg-indigo-500/5 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-400 dark:hover:text-slate-950 group-hover:scale-[1.01] hover:shadow-[0_10px_25px_-5px_rgba(99,102,241,0.2)] transition-all flex items-center justify-center space-x-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <span>Read Case Study</span>
+                        <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-20 border-t border-slate-200/60 dark:border-slate-800/60 grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <div class="lg:col-span-5 flex flex-col space-y-4">
+                <span class="text-xs font-bold tracking-[0.2em] text-accent-light dark:text-accent-dark uppercase">About</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+                    A product designer leading discovery, design, and delivery.
+                </h2>
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                    I balance creative execution with deep analytical strategy. In my experience, outstanding UX isn't just about beautiful mockups—it is about mapping user cognitive loads, identifying system constraints, and designing scalable workflows that hit business KPIs.
+                </p>
+            </div>
+            
+            <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Card 1 -->
+                <div class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-obsidian-900 flex flex-col space-y-3">
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white">What I Bring</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                        I connect user needs, business goals, and visual design to shape clear flows that feel intuitive from first click to final action.
+                    </p>
+                    <ul class="text-xs text-slate-600 dark:text-slate-400 space-y-1.5 pt-2" aria-label="Key competencies">
+                        <li class="flex items-center space-x-2">
+                            <span class="w-1.5 h-1.5 bg-accent-light dark:bg-accent-dark rounded-full"></span>
+                            <span>Product thinking with strong visual craft</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="w-1.5 h-1.5 bg-accent-light dark:bg-accent-dark rounded-full"></span>
+                            <span>Accessible, responsive interfaces (WCAG)</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="w-1.5 h-1.5 bg-accent-light dark:bg-accent-dark rounded-full"></span>
+                            <span>Collaborative handoff with development teams</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-obsidian-900 flex flex-col space-y-3">
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white">Work Experience</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                        Redesigned core onboarding, dashboards, and checkout systems across Fintech, SaaS, and E-commerce platforms.
+                    </p>
+                    <p class="text-xs text-slate-600 dark:text-slate-400 pt-2 leading-relaxed">
+                        Experienced in moderated/unmoderated usability testing, rapid wireframing, high-fidelity UI design, and managing growing tokenized design systems.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Design Process Section -->
+        <section id="process" class="py-20 border-t border-slate-200/60 dark:border-slate-800/60 flex flex-col space-y-12">
+            <div class="flex flex-col space-y-3 max-w-xl">
+                <span class="text-xs font-bold tracking-[0.2em] text-accent-light dark:text-accent-dark uppercase">Methodology</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+                    My design process balances rigor, execution, and agility.
+                </h2>
+            </div>
+
+            <!-- Stepper Navigation (10% Accent for active state) -->
+            <div class="flex border-b border-slate-200 dark:border-slate-800 overflow-x-auto pb-px" role="tablist" aria-label="Design Process Stages">
+                <button onclick="switchProcess(1)" id="proc-tab-1" class="tab-active text-accent-light dark:text-accent-dark px-6 py-4 font-semibold text-xs uppercase tracking-wider whitespace-nowrap focus:outline-none transition-colors" role="tab" aria-selected="true" aria-controls="proc-panel-1">
+                    01. Discover
+                </button>
+                <button onclick="switchProcess(2)" id="proc-tab-2" class="px-6 py-4 text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white font-semibold text-xs uppercase tracking-wider whitespace-nowrap focus:outline-none transition-colors" role="tab" aria-selected="false" aria-controls="proc-panel-2">
+                    02. Define
+                </button>
+                <button onclick="switchProcess(3)" id="proc-tab-3" class="px-6 py-4 text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white font-semibold text-xs uppercase tracking-wider whitespace-nowrap focus:outline-none transition-colors" role="tab" aria-selected="false" aria-controls="proc-panel-3">
+                    03. Ideate
+                </button>
+                <button onclick="switchProcess(4)" id="proc-tab-4" class="px-6 py-4 text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white font-semibold text-xs uppercase tracking-wider whitespace-nowrap focus:outline-none transition-colors" role="tab" aria-selected="false" aria-controls="proc-panel-4">
+                    04. Design
+                </button>
+                <button onclick="switchProcess(5)" id="proc-tab-5" class="px-6 py-4 text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white font-semibold text-xs uppercase tracking-wider whitespace-nowrap focus:outline-none transition-colors" role="tab" aria-selected="false" aria-controls="proc-panel-5">
+                    05. Deliver
+                </button>
+            </div>
+
+            <!-- Stepper Panels -->
+            <div class="mt-8">
+                <!-- Panel 1 (Discover) -->
+                <div id="proc-panel-1" class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start" role="tabpanel" aria-labelledby="proc-tab-1">
+                    <div class="md:col-span-5 flex flex-col space-y-4">
+                        <span class="text-3xl font-extrabold text-accent-light dark:text-accent-dark">Discover</span>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Uncovering user needs and business parameters.</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                            I start by diving into data analytics, conducting stakeholder workshops, and performing user interviews. The goal is to separate assumptions from verified user pain points.
+                        </p>
+                    </div>
+                    <div class="md:col-span-7 grid grid-cols-2 gap-4">
+                        <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50">
+                            <h4 class="text-xs font-bold text-slate-900 dark:text-white uppercase mb-1">Key Actions</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">User interviews, competitive analysis, heuristic reviews, telemetry audits.</p>
+                        </div>
+                        <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50">
+                            <h4 class="text-xs font-bold text-slate-900 dark:text-white uppercase mb-1">Deliverables</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">User research summaries, competitive audit matrices, analytics diagnostics.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 2 (Define) -->
+                <div id="proc-panel-2" class="hidden grid grid-cols-1 md:grid-cols-12 gap-8 items-start" role="tabpanel" aria-labelledby="proc-tab-2">
+                    <div class="md:col-span-5 flex flex-col space-y-4">
+                        <span class="text-3xl font-extrabold text-accent-light dark:text-accent-dark">Define</span>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Establishing scoping, personas, and system goals.</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                            Here, I organize our research. I build empathy maps and construct persona definitions, clarifying the core problem statement. We agree on key performance indices (KPIs).
+                        </p>
+                    </div>
+                    <div class="md:col-span-7 grid grid-cols-2 gap-4">
+                        <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50">
+                            <h4 class="text-xs font-bold text-slate-900 dark:text-white uppercase mb-1">Key Actions</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">User journey mapping, task analysis, business goal alignment, KPI definition.</p>
+                        </div>
+                        <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50">
+                            <h4 class="text-xs font-bold text-slate-900 dark:text-white uppercase mb-1">Deliverables</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Personas, core user journey maps, product requirements briefs, success criteria.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 3 (Ideate) -->
+                <div id="proc-panel-3" class="hidden grid grid-cols-1 md:grid-cols-12 gap-8 items-start" role="tabpanel" aria-labelledby="proc-tab-3">
+                    <div class="md:col-span-5 flex flex-col space-y-4">
+                        <span class="text-3xl font-extrabold text-accent-light dark:text-accent-dark">Ideate</span>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Exploring layout variations and interaction models.</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                            Through low-fidelity sketches and information architecture wireframing, I map out navigation systems. We run early interactive prototyping and concept test with actual users.
+                        </p>
+                    </div>
+                    <div class="md:col-span-7 grid grid-cols-2 gap-4">
+                        <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50">
+                            <h4 class="text-xs font-bold text-slate-900 dark:text-white uppercase mb-1">Key Actions</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Information architecture mapping, card sorting, wireframing, paper prototyping.</p>
+                        </div>
+                        <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50">
+                            <h4 class="text-xs font-bold text-slate-900 dark:text-white uppercase mb-1">Deliverables</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Sitemaps, detailed task flows, low-fidelity clickable wireframe prototypes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 4 (Design) -->
+                <div id="proc-panel-4" class="hidden grid grid-cols-1 md:grid-cols-12 gap-8 items-start" role="tabpanel" aria-labelledby="proc-tab-4">
+                    <div class="md:col-span-5 flex flex-col space-y-4">
+                        <span class="text-3xl font-extrabold text-accent-light dark:text-accent-dark">Design</span>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Crafting high-fidelity UI and robust token systems.</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                            I design high-fidelity layouts based on modern typographic rules, high-contrast assets, and robust design systems. Accessibility audits (WCAG 2.1) are run on all layouts.
+                        </p>
+                    </div>
+                    <div class="md:col-span-7 grid grid-cols-2 gap-4">
+                        <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50">
+                            <h4 class="text-xs font-bold text-slate-900 dark:text-white uppercase mb-1">Key Actions</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">High-fidelity UI design, UI style guide setup, micro-interaction modeling, accessibility audit.</p>
+                        </div>
+                        <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50">
+                            <h4 class="text-xs font-bold text-slate-900 dark:text-white uppercase mb-1">Deliverables</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Polished screens, tokenized design systems, interactive high-fidelity prototype, checklist audits.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 5 (Deliver) -->
+                <div id="proc-panel-5" class="hidden grid grid-cols-1 md:grid-cols-12 gap-8 items-start" role="tabpanel" aria-labelledby="proc-tab-5">
+                    <div class="md:col-span-5 flex flex-col space-y-4">
+                        <span class="text-3xl font-extrabold text-accent-light dark:text-accent-dark">Deliver</span>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Documenting specs and ensuring seamless engineering handoff.</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                            I build detailed asset specifications and lead collaborative reviews with development engineers. Once built, I run design-QA reviews to ensure structural perfection.
+                        </p>
+                    </div>
+                    <div class="md:col-span-7 grid grid-cols-2 gap-4">
+                        <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50">
+                            <h4 class="text-xs font-bold text-slate-900 dark:text-white uppercase mb-1">Key Actions</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Developer walkthrough, design QA audit, documentation assembly, interaction redlining.</p>
+                        </div>
+                        <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50">
+                            <h4 class="text-xs font-bold text-slate-900 dark:text-white uppercase mb-1">Deliverables</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Asset specs documentation, Figma developer-handoff file, QA bug logs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Toolkit & Philosophy Grid -->
+        <section id="skills" class="py-20 border-t border-slate-200/60 dark:border-slate-800/60 grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <div class="lg:col-span-5 flex flex-col space-y-4">
+                <span class="text-xs font-bold tracking-[0.2em] text-accent-light dark:text-accent-dark uppercase">Toolkit & Architecture</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+                    Crafting components that translate smoothly to production.
+                </h2>
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                    I focus heavily on operational tools and information layouts that bridge the gap between design concepts and scalable codebases.
+                </p>
+            </div>
+            
+            <div class="lg:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-4">
+                <!-- Item 1 -->
+                <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-obsidian-900">
+                    <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Figma & Framer</span>
+                    <p class="text-xs text-slate-600 dark:text-slate-400">Design systems, tokenization, responsive prototyping, interactive variables.</p>
+                </div>
+                <!-- Item 2 -->
+                <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-obsidian-900">
+                    <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Usability Testing</span>
+                    <p class="text-xs text-slate-600 dark:text-slate-400">Moderated studies, cognitive walkthroughs, telemetry mapping, unmoderated Maze audits.</p>
+                </div>
+                <!-- Item 3 -->
+                <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-obsidian-900">
+                    <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Information Arch</span>
+                    <p class="text-xs text-slate-600 dark:text-slate-400">Card sorting, journey diagrams, task mapping, complex navigation schemas.</p>
+                </div>
+                <!-- Item 4 -->
+                <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-obsidian-900">
+                    <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Developer Handoff</span>
+                    <p class="text-xs text-slate-600 dark:text-slate-400">Tailwind variables, component breakdowns, states redlining, spec docs.</p>
+                </div>
+                <!-- Item 5 -->
+                <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-obsidian-900">
+                    <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">HTML / CSS / JS</span>
+                    <p class="text-xs text-slate-600 dark:text-slate-400">Responsive templates, basic interactive nodes, layouts translation validation.</p>
+                </div>
+                <!-- Item 6 -->
+                <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-obsidian-900">
+                    <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Analytics & Audits</span>
+                    <p class="text-xs text-slate-600 dark:text-slate-400">Hotjar mapping, conversion tracking, contrast audit logs (A11y checks).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Block -->
+        <section class="py-12 px-6 md:px-12 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-obsidian-900 relative overflow-hidden">
+            <div class="absolute -right-20 -bottom-20 w-44 h-44 rounded-full bg-accent-light/5 dark:bg-accent-dark/5 blur-3xl"></div>
+            <div class="max-w-3xl flex flex-col space-y-6">
+                <p class="text-lg md:text-xl font-medium text-slate-700 dark:text-slate-300 italic leading-relaxed">
+                    “The new flow felt much easier to use right away. We saw stronger engagement and fewer support questions after launch.”
+                </p>
+                <div class="flex flex-col space-y-0.5">
+                    <strong class="text-sm font-bold text-slate-900 dark:text-white">Product Lead</strong>
+                    <span class="text-xs text-slate-500 dark:text-slate-400">Northstar Wallet</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section (End) -->
+        <section id="contact" class="py-20 mt-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center border-t border-slate-200/60 dark:border-slate-800/60">
+            <div class="lg:col-span-7 flex flex-col space-y-4">
+                <span class="text-xs font-bold tracking-[0.2em] text-accent-light dark:text-accent-dark uppercase">Contact</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
+                    Have an interesting role or digital product that needs a designer?
+                </h2>
+                <p class="text-sm text-slate-600 dark:text-slate-400">
+                    Let's chat. I am open to full-time product roles, remote engagements, and UI/UX consultations.
+                </p>
+            </div>
+            
+            <div class="lg:col-span-5 flex flex-col sm:flex-row gap-4 lg:justify-end">
+                <a class="px-6 py-4 rounded-full text-xs font-bold uppercase tracking-wider text-white dark:text-slate-950 bg-gradient-to-r from-teal-600 to-teal-500 dark:from-teal-400 dark:to-teal-300 hover:shadow-[0_12px_30px_-5px_rgba(45,212,191,0.3)] hover:-translate-y-0.5 transition-all text-center focus:outline-none focus:ring-2 focus:ring-accent-light dark:focus:ring-accent-dark" href="mailto:mszanan456@gmail.com">
+                    mszanan456@gmail.com
+                </a>
+                <a class="px-6 py-4 rounded-full text-xs font-bold uppercase tracking-wider border border-slate-200 dark:border-slate-800 bg-white/30 dark:bg-slate-900/30 hover:bg-slate-100 dark:hover:bg-slate-900 hover:-translate-y-0.5 transition-all text-slate-900 dark:text-white text-center focus:outline-none focus:ring-2 focus:ring-slate-300 dark:focus:ring-slate-700" href="tel:01685328961">
+                    01685328961
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200/60 dark:border-slate-800/60 py-8 bg-slate-50/50 dark:bg-obsidian-950/50">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 dark:text-slate-400">
+            <p>© 2026 Mostab Siratul Zanan. UI/UX Designer.</p>
+            <div class="flex items-center space-x-6" aria-label="Social media profiles">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="hover:text-accent-light dark:hover:text-accent-dark transition-colors">LinkedIn</a>
+                <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="hover:text-accent-light dark:hover:text-accent-dark transition-colors">Behance</a>
+                <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="hover:text-accent-light dark:hover:text-accent-dark transition-colors">Dribbble</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ==============================================
+         CASE STUDY DEEP-DIVE MODALS (Peak-End UX Rule)
+         ============================================== -->
+
+    <!-- Case Study Modal: Fintech -->
+    <div id="modal-fintech" class="fixed inset-0 z-50 hidden overflow-y-auto" role="dialog" aria-modal="true" aria-labelledby="modal-fintech-title">
+        <!-- Backdrop -->
+        <div class="fixed inset-0 bg-slate-950/70 backdrop-blur-md transition-opacity"></div>
+        
+        <!-- Modal Content Container -->
+        <div class="relative min-h-screen flex items-center justify-center p-4 md:p-10">
+            <div class="relative bg-white dark:bg-obsidian-900 border border-slate-200 dark:border-slate-800 w-full max-w-5xl rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row h-[90vh]">
+                
+                <!-- Left Sidebar (Fast Scanning & Navigation Heuristic) -->
+                <aside class="w-full md:w-64 border-b md:border-b-0 md:border-r border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-obsidian-950/40 p-6 flex flex-col justify-between" aria-label="Case Study Outline">
+                    <div class="flex flex-col space-y-6">
+                        <span class="text-[9px] font-bold uppercase tracking-wider text-teal-600 dark:text-teal-400">ONBOARDING LIFT</span>
+                        <nav class="flex flex-col space-y-3 text-xs font-semibold text-slate-500 dark:text-slate-400" aria-label="Case Study Sections">
+                            <a href="#cs-fintech-problem" class="hover:text-slate-900 dark:hover:text-white transition-colors">1. Overview & Problem</a>
+                            <a href="#cs-fintech-goals" class="hover:text-slate-900 dark:hover:text-white transition-colors">2. Goals & Metrics</a>
+                            <a href="#cs-fintech-research" class="hover:text-slate-900 dark:hover:text-white transition-colors">3. Research & Insights</a>
+                            <a href="#cs-fintech-solution" class="hover:text-slate-900 dark:hover:text-white transition-colors">4. Solution & Design System</a>
+                            <a href="#cs-fintech-testing" class="hover:text-slate-900 dark:hover:text-white transition-colors">5. Testing & Iteration</a>
+                            <a href="#cs-fintech-impact" class="hover:text-slate-900 dark:hover:text-white transition-colors">6. Outcome & Deliverables</a>
+                        </nav>
+                    </div>
+
+                    <div class="hidden md:flex flex-col space-y-2 pt-6 border-t border-slate-200 dark:border-slate-800">
+                        <span class="text-[9px] font-bold text-slate-400 uppercase">Project Roles</span>
+                        <p class="text-[10px] text-slate-600 dark:text-slate-400">Product Designer<br>Collaboration: PM, 2 Eng, 1 Analyst</p>
+                    </div>
+                </aside>
+
+                <!-- Right Scrollable Content -->
+                <div class="flex-1 overflow-y-auto p-6 md:p-10 space-y-8" id="modal-fintech-body">
+                    
+                    <!-- Header -->
+                    <div class="flex justify-between items-start">
+                        <div class="flex flex-col space-y-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-teal-600 dark:text-teal-400">MICRO-INVESTING FLOW</span>
+                            <h3 id="modal-fintech-title" class="text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-white leading-tight">Simplifying Micro-Investing for Gen-Z</h3>
+                        </div>
+                        <button onclick="closeModal('fintech')" class="p-2 rounded-full border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-950 text-slate-500 dark:text-slate-400 transition-colors focus:outline-none" aria-label="Close Case Study">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                        </button>
+                    </div>
+
+                    <!-- 1. Overview -->
+                    <section id="cs-fintech-problem" class="space-y-3">
+                        <h4 class="text-sm font-bold text-teal-600 dark:text-teal-400 uppercase tracking-wider">1. Project Overview & The Core Problem</h4>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                            The platform had high acquisition rates but a major drop-off occurred before users funded their accounts. Financial jargon and exposure to complex asset choices early on caused friction and cognitive fatigue.
+                        </p>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-semibold">
+                            Core UX Hypothesis: Users abandonment was due to psychological friction (anxiety of losing funds/lack of clarity) rather than aesthetic design.
+                        </p>
+                    </section>
+
+                    <!-- 2. Business Goals -->
+                    <section id="cs-fintech-goals" class="space-y-3">
+                        <h4 class="text-sm font-bold text-teal-600 dark:text-teal-400 uppercase tracking-wider">2. Business Goals & UX Metrics</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950/40">
+                                <span class="block text-xs font-bold text-slate-400">Target KPI</span>
+                                <span class="text-sm font-semibold text-slate-900 dark:text-white">Lift deposit onboarding completion from 61% to 72%.</span>
+                            </div>
+                            <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950/40">
+                                <span class="block text-xs font-bold text-slate-400">UX Metric</span>
+                                <span class="text-sm font-semibold text-slate-900 dark:text-white">Reduce abandonment rate on funding selection panel.</span>
+                            </div>
+                            <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950/40">
+                                <span class="block text-xs font-bold text-slate-400">Business Impact</span>
+                                <span class="text-sm font-semibold text-slate-900 dark:text-white">Lower onboarding-related helpdesk tickets by 20%.</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 3. Research -->
+                    <section id="cs-fintech-research" class="space-y-3">
+                        <h4 class="text-sm font-bold text-teal-600 dark:text-teal-400 uppercase tracking-wider">3. User Research & Insights</h4>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                            Through unmoderated audits (Maze) and 10 moderated remote interviews, I synthesized the user anxiety cycle.
+                        </p>
+                        <ul class="list-disc pl-5 text-sm text-slate-600 dark:text-slate-300 space-y-1.5">
+                            <li>Users were confused by terms like "Diversified Portfolio Allocations".</li>
+                            <li>A fear of making accidental deposits triggered hesitation.</li>
+                            <li>Progressive disclosure was preferred over showing multiple complex panels on step one.</li>
+                        </ul>
+                    </section>
+
+                    <!-- 4. Solution & Design System -->
+                    <section id="cs-fintech-solution" class="space-y-3">
+                        <h4 class="text-sm font-bold text-teal-600 dark:text-teal-400 uppercase tracking-wider">4. High-Fidelity UI & Design System</h4>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                            We introduced an empathetic interface using simple terms, progress indicators, clear error styling, and distinct touch targets.
+                        </p>
+                        <ul class="list-disc pl-5 text-sm text-slate-600 dark:text-slate-300 space-y-1.5">
+                            <li><strong>Touch Targets:</strong> Interactive elements set to 48px height.</li>
+                            <li><strong>Readability:</strong> Color contrast ratio strictly aligned with WCAG 2.1 AA (4.5:1).</li>
+                            <li><strong>Microcopy Guidance:</strong> Clear statements near deposit buttons reminding users that deposits are flexible.</li>
+                        </ul>
+                    </section>
+
+                    <!-- 5. Testing -->
+                    <section id="cs-fintech-testing" class="space-y-3">
+                        <h4 class="text-sm font-bold text-teal-600 dark:text-teal-400 uppercase tracking-wider">5. Usability Testing & Iterations</h4>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                            Early concepts had energetic gamified screens, but testing showed users found them unprofessional for finance. I reduced the saturated tones and moved security reassurance messages to the checkout card.
+                        </p>
+                    </section>
+
+                    <!-- 6. Outcome -->
+                    <section id="cs-fintech-impact" class="space-y-4">
+                        <h4 class="text-sm font-bold text-teal-600 dark:text-teal-400 uppercase tracking-wider">6. Final Impact & Deliverables</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <div class="p-4 rounded-xl border border-teal-500/10 bg-teal-500/5 text-center">
+                                <span class="block text-2xl font-extrabold text-teal-600 dark:text-teal-400">+18%</span>
+                                <span class="text-[10px] uppercase font-bold text-slate-500 dark:text-slate-400 mt-1 block">Deposit Conversion</span>
+                            </div>
+                            <div class="p-4 rounded-xl border border-teal-500/10 bg-teal-500/5 text-center">
+                                <span class="block text-2xl font-extrabold text-teal-600 dark:text-teal-400">+12%</span>
+                                <span class="text-[10px] uppercase font-bold text-slate-500 dark:text-slate-400 mt-1 block">7-day Retention</span>
+                            </div>
+                            <div class="p-4 rounded-xl border border-teal-500/10 bg-teal-500/5 text-center">
+                                <span class="block text-2xl font-extrabold text-teal-600 dark:text-teal-400">-29%</span>
+                                <span class="text-[10px] uppercase font-bold text-slate-500 dark:text-slate-400 mt-1 block">Time to Invest</span>
+                            </div>
+                        </div>
+                        <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-1">
+                            <li>• High-fidelity designs & interactive flows</li>
+                            <li>• Figma component library setup</li>
+                            <li>• Developer spec sheets</li>
+                        </ul>
+                    </section>
+
+                    <div class="pt-6 border-t border-slate-200 dark:border-slate-800 flex justify-end">
+                        <button onclick="closeModal('fintech')" class="px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-900 text-white dark:bg-white dark:text-slate-950 transition-colors hover:bg-slate-800 dark:hover:bg-slate-100">
+                            Close Review
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Case Study Modal: SaaS -->
+    <div id="modal-saas" class="fixed inset-0 z-50 hidden overflow-y-auto" role="dialog" aria-modal="true" aria-labelledby="modal-saas-title">
+        <!-- Backdrop -->
+        <div class="fixed inset-0 bg-slate-950/70 backdrop-blur-md transition-opacity"></div>
+        
+        <!-- Modal Content Container -->
+        <div class="relative min-h-screen flex items-center justify-center p-4 md:p-10">
+            <div class="relative bg-white dark:bg-obsidian-900 border border-slate-200 dark:border-slate-800 w-full max-w-5xl rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row h-[90vh]">
+                
+                <!-- Left Sidebar (Fast Scanning) -->
+                <aside class="w-full md:w-64 border-b md:border-b-0 md:border-r border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-obsidian-950/40 p-6 flex flex-col justify-between" aria-label="Case Study Outline">
+                    <div class="flex flex-col space-y-6">
+                        <span class="text-[9px] font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">DATA SCANNABILITY</span>
+                        <nav class="flex flex-col space-y-3 text-xs font-semibold text-slate-500 dark:text-slate-400" aria-label="Case Study Sections">
+                            <a href="#cs-saas-problem" class="hover:text-slate-900 dark:hover:text-white transition-colors">1. Overview & Problem</a>
+                            <a href="#cs-saas-goals" class="hover:text-slate-900 dark:hover:text-white transition-colors">2. Goals & Metrics</a>
+                            <a href="#cs-saas-research" class="hover:text-slate-900 dark:hover:text-white transition-colors">3. Research & Insights</a>
+                            <a href="#cs-saas-solution" class="hover:text-slate-900 dark:hover:text-white transition-colors">4. Solution & Design System</a>
+                            <a href="#cs-saas-testing" class="hover:text-slate-900 dark:hover:text-white transition-colors">5. Testing & Iteration</a>
+                            <a href="#cs-saas-impact" class="hover:text-slate-900 dark:hover:text-white transition-colors">6. Outcome & Deliverables</a>
+                        </nav>
+                    </div>
+
+                    <div class="hidden md:flex flex-col space-y-2 pt-6 border-t border-slate-200 dark:border-slate-800">
+                        <span class="text-[9px] font-bold text-slate-400 uppercase">Project Roles</span>
+                        <p class="text-[10px] text-slate-600 dark:text-slate-400">Product Designer<br>Collaboration: PM, 3 Eng, 1 Data Analyst</p>
+                    </div>
+                </aside>
+
+                <!-- Right Scrollable Content -->
+                <div class="flex-1 overflow-y-auto p-6 md:p-10 space-y-8" id="modal-saas-body">
+                    
+                    <!-- Header -->
+                    <div class="flex justify-between items-start">
+                        <div class="flex flex-col space-y-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">ENTERPRISE SAAS</span>
+                            <h3 id="modal-saas-title" class="text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-white leading-tight">Optimizing Supply Chain Logistics Analytics</h3>
+                        </div>
+                        <button onclick="closeModal('saas')" class="p-2 rounded-full border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-950 text-slate-500 dark:text-slate-400 transition-colors focus:outline-none" aria-label="Close Case Study">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                        </button>
+                    </div>
+
+                    <!-- 1. Overview -->
+                    <section id="cs-saas-problem" class="space-y-3">
+                        <h4 class="text-sm font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">1. Project Overview & The Core Problem</h4>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                            The enterprise analytics interface was cluttered with numerous generic dashboards, resulting in long scanning intervals and failure to notice logistics exceptions (delays, errors) quickly.
+                        </p>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-semibold">
+                            Core UX Hypothesis: Organizers needed an exception-first structure, rather than a data dump, to allow operations managers to make decisions faster.
+                        </p>
+                    </section>
+
+                    <!-- 2. Business Goals -->
+                    <section id="cs-saas-goals" class="space-y-3">
+                        <h4 class="text-sm font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">2. Business Goals & UX Metrics</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950/40">
+                                <span class="block text-xs font-bold text-slate-400">Target KPI</span>
+                                <span class="text-sm font-semibold text-slate-900 dark:text-white">Reduce target transaction review time by 20%.</span>
+                            </div>
+                            <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950/40">
+                                <span class="block text-xs font-bold text-slate-400">UX Metric</span>
+                                <span class="text-sm font-semibold text-slate-900 dark:text-white">Increase filter configuration and view-saving actions.</span>
+                            </div>
+                            <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950/40">
+                                <span class="block text-xs font-bold text-slate-400">Business Impact</span>
+                                <span class="text-sm font-semibold text-slate-900 dark:text-white">Decrease related support questions regarding data queries.</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 3. Research -->
+                    <section id="cs-saas-research" class="space-y-3">
+                        <h4 class="text-sm font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">3. User Research & Insights</h4>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                            Through contextual inquiries and workflow diagrams, I established key insights:
+                        </p>
+                        <ul class="list-disc pl-5 text-sm text-slate-600 dark:text-slate-300 space-y-1.5">
+                            <li>Users were spending too much time re-filtering data tables each morning.</li>
+                            <li>Standard charts lacked visual contrast indicators for critical anomalies.</li>
+                            <li>Siloed sub-panels caused users to keep multiple tabs open simultaneously.</li>
+                        </ul>
+                    </section>
+
+                    <!-- 4. Solution & Design System -->
+                    <section id="cs-saas-solution" class="space-y-3">
+                        <h4 class="text-sm font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">4. High-Fidelity UI & Design System</h4>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                            I redesigned the system to emphasize exceptions. Sticky filters, custom layouts, saved views, and clear visual exception warnings were prioritized.
+                        </p>
+                        <ul class="list-disc pl-5 text-sm text-slate-600 dark:text-slate-300 space-y-1.5">
+                            <li><strong>Exception colors:</strong> Saturated indicators with accessible ratios.</li>
+                            <li><strong>Typography hierarchy:</strong> Standardizing body weights to simplify scanning of dense data rows.</li>
+                            <li><strong>Saved Views:</strong> Inline quick-save utility above tables.</li>
+                        </ul>
+                    </section>
+
+                    <!-- 5. Testing -->
+                    <section id="cs-saas-testing" class="space-y-3">
+                        <h4 class="text-sm font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">5. Usability Testing & Iterations</h4>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                            During our early testing, operators still felt overwhelmed. I removed three less-essential charts from the core dashboard layout and replaced them with a single anomaly notification banner.
+                        </p>
+                    </section>
+
+                    <!-- 6. Outcome -->
+                    <section id="cs-saas-impact" class="space-y-4">
+                        <h4 class="text-sm font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">6. Final Impact & Deliverables</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <div class="p-4 rounded-xl border border-indigo-500/10 bg-indigo-500/5 text-center">
+                                <span class="block text-2xl font-extrabold text-indigo-600 dark:text-indigo-400">-24%</span>
+                                <span class="text-[10px] uppercase font-bold text-slate-500 dark:text-slate-400 mt-1 block">Review Time Cut</span>
+                            </div>
+                            <div class="p-4 rounded-xl border border-indigo-500/10 bg-indigo-500/5 text-center">
+                                <span class="block text-2xl font-extrabold text-indigo-600 dark:text-indigo-400">+31%</span>
+                                <span class="text-[10px] uppercase font-bold text-slate-500 dark:text-slate-400 mt-1 block">Filter Adoption</span>
+                            </div>
+                            <div class="p-4 rounded-xl border border-indigo-500/10 bg-indigo-500/5 text-center">
+                                <span class="block text-2xl font-extrabold text-indigo-600 dark:text-indigo-400">-18%</span>
+                                <span class="text-[10px] uppercase font-bold text-slate-500 dark:text-slate-400 mt-1 block">Support Tickets</span>
+                            </div>
+                        </div>
+                        <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-1">
+                            <li>• High-fidelity responsive dashboard layouts</li>
+                            <li>• Figma token specification</li>
+                            <li>• Detailed interaction maps</li>
+                        </ul>
+                    </section>
+
+                    <div class="pt-6 border-t border-slate-200 dark:border-slate-800 flex justify-end">
+                        <button onclick="closeModal('saas')" class="px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-900 text-white dark:bg-white dark:text-slate-950 transition-colors hover:bg-slate-800 dark:hover:bg-slate-100">
+                            Close Review
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ==============================================
+         INTERACTIVE CODE LOGIC (Dark Mode & Stepper)
+         ============================================== -->
+    <script>
+        // ------------------ DARK MODE TOGGLE ------------------
+        const htmlElement = document.documentElement;
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeToggleSun = document.getElementById('theme-toggle-sun');
+        const themeToggleMoon = document.getElementById('theme-toggle-moon');
+
+        function updateThemeUI(isDark) {
+            if (isDark) {
+                htmlElement.classList.add('dark');
+                themeToggleSun.classList.remove('hidden');
+                themeToggleMoon.classList.add('hidden');
+            } else {
+                htmlElement.classList.remove('dark');
+                themeToggleSun.classList.add('hidden');
+                themeToggleMoon.classList.remove('hidden');
+            }
+        }
+
+        // Initialize theme from localStorage or system preference
+        const storedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        let isDarkMode = storedTheme === 'dark' || (!storedTheme && systemPrefersDark);
+        updateThemeUI(isDarkMode);
+
+        themeToggleBtn.addEventListener('click', () => {
+            isDarkMode = !isDarkMode;
+            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            updateThemeUI(isDarkMode);
+        });
+
+
+        // ------------------ CASE STUDY MODALS ------------------
+        function openModal(id) {
+            const modal = document.getElementById(`modal-${id}`);
+            if (modal) {
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden'; // Lock background scroll
+                
+                // Keyboard accessibility listener (ESC to close)
+                window.addEventListener('keydown', handleEscKey);
+            }
+        }
+
+        function closeModal(id) {
+            const modal = document.getElementById(`modal-${id}`);
+            if (modal) {
+                modal.classList.add('hidden');
+                document.body.style.overflow = ''; // Unlock scroll
+                window.removeEventListener('keydown', handleEscKey);
+            }
+        }
+
+        function handleEscKey(e) {
+            if (e.key === 'Escape') {
+                const openModals = document.querySelectorAll('[id^="modal-"]:not(.hidden)');
+                openModals.forEach(modal => {
+                    const id = modal.id.replace('modal-', '');
+                    closeModal(id);
+                });
+            }
+        }
+
+        // Close modal on clicking backdrop
+        window.addEventListener('click', (e) => {
+            const openModals = document.querySelectorAll('[id^="modal-"]:not(.hidden)');
+            openModals.forEach(modal => {
+                const backdrop = modal.querySelector('.bg-slate-950\\/70');
+                if (e.target === modal || e.target === backdrop) {
+                    const id = modal.id.replace('modal-', '');
+                    closeModal(id);
+                }
+            });
+        });
+
+
+        // ------------------ PROCESS STEPPER ------------------
+        function switchProcess(stepNum) {
+            // Reset all tabs
+            for (let i = 1; i <= 5; i++) {
+                const tab = document.getElementById(`proc-tab-${i}`);
+                const panel = document.getElementById(`proc-panel-${i}`);
+                
+                if (tab && panel) {
+                    if (i === stepNum) {
+                        tab.className = "tab-active text-accent-light dark:text-accent-dark px-6 py-4 font-semibold text-xs uppercase tracking-wider whitespace-nowrap focus:outline-none transition-colors";
+                        tab.setAttribute('aria-selected', 'true');
+                        panel.classList.remove('hidden');
+                        panel.classList.add('grid');
+                    } else {
+                        tab.className = "px-6 py-4 text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white font-semibold text-xs uppercase tracking-wider whitespace-nowrap focus:outline-none transition-colors";
+                        tab.setAttribute('aria-selected', 'false');
+                        panel.classList.add('hidden');
+                        panel.classList.remove('grid');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
